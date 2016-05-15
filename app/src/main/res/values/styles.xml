@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/darkblue</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+    </style>
+    <!-- FAB Style -->
+
+    <style name="FloatingWaveColorActionButtonGreen" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="rd_rippleColor">@color/accent</item>
+        <item name="fab_backgroundColor">@color/green</item>
+        <item name="fab_elevation">4dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+    </style>
+
+    <style name="FloatingWaveColorActionButtonRed" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="rd_rippleColor">@color/accent</item>
+        <item name="fab_backgroundColor">@color/red</item>
+        <item name="fab_elevation">4dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+    </style>
+
+    <!-- AppBar Style -->
+
+    <style name="AppBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="selectableItemBackground">@null</item>
+    </style>
+
+    <!-- TabPageIndicator Style -->
+    <style name="TabPageIndicator" parent="Material.Widget.TabPageIndicator.Light">
+        <item name="tpi_tabPadding">12dp</item>
+        <item name="tpi_indicatorHeight">3dp</item>
+        <item name="android:textAppearance">@style/TabTextAppearance</item>
+        <item name="tpi_mode">scroll</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Button -->
+    <style name="RaiseButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/bg_bt_raise</item>
+        <item name="rd_leftPadding">1dp</item>
+        <item name="rd_topPadding">1dp</item>
+        <item name="rd_rightPadding">1dp</item>
+        <item name="rd_bottomPadding">2dp</item>
+    </style>
+
+    <!-- Progress -->
+    <style name="ColorsCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColors">@array/progress_colors</item>
+    </style>
+</resources>
